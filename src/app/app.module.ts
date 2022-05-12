@@ -4,13 +4,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import {ButtonModule} from 'primeng/button';
+import { UsuarioListagemComponent } from './usuario-listagem/usuario-listagem.component';
+import { UsuarioDetalheComponent } from './usuario-detalhe/usuario-detalhe.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UsuarioListagemComponent,
+    UsuarioDetalheComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
