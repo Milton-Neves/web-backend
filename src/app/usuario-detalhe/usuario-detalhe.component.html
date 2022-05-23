@@ -1,1 +1,26 @@
-<p>usuario-detalhe works!</p>
+
+<a routerLink="/listagem">Voltar</a>
+
+<p>
+    Usuario {{ id }}
+</p>
+
+<table>
+    <tr>
+        <td>Código: </td>
+        <td>{{usuario?.id}}</td>
+</tr>
+<tr>
+    <td>E-mail: </td>
+        <td>{{usuario.email}}</td>
+        </tr>
+<tr>
+        <td>Nome: </td>
+        <td>{{usuario.first_name}}</td>
+    </tr>    
+        <tr>
+        <td>Sobrenome: </td>
+        <td>{{usuario.last_name}}</td>
+    </tr>
+    
+</table>
