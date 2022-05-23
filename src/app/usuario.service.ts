@@ -17,7 +17,7 @@ export class UsuarioService {
     );
   }  
 
-  getById(id: number): Observable<Usuario[]>{
+  getById(id: number): Observable<Usuario>{
     const url = `https://reqres.in/api/users/${id}`;
     return this.http.get<Usuario>(url).pipe(
       map((retorno: any) => retorno.data)

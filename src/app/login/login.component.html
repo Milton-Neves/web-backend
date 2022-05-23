@@ -1,0 +1,17 @@
+<h1>Login de Sistema</h1>
+
+<hr/>
+
+<form (ngSubmit)="onSubmit">
+    <p>
+        Login: <input name="usuario" [(ngModel)]="usuario" type="text" pInputText />
+    </p>
+    
+    <p>
+        Password: <p-password name="senha" [(ngModel)]="senha" [toggleMask]="true"></p-password>
+    </p>
+
+    <p>
+        <button pButton label="Entrar" type="submit"></button>
+    </p>
+</form>
